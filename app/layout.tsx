@@ -2,17 +2,23 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tessa22.cc"),
+  metadataBase: new URL("https://www.tessa22.cc"),
   applicationName: "Tessa AI",
-  title: "Tessa AI — Production Lab",
-  description: "Turn scripts and videos into reusable production assets, keyframes, and continuity-aware shot plans.",
+  title: "Tessa AI — AI Film Pre-production Workspace",
+  description: "Turn scripts and reference videos into reusable production assets, local keyframes, and continuity-aware shot plans.",
   creator: "Tessa AI",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Tessa AI — Production Lab",
-    description: "Turn scripts and videos into reusable production assets, keyframes, and continuity-aware shot plans.",
-    url: "https://tessa22.cc",
+    title: "Tessa AI — AI Film Pre-production Workspace",
+    description: "Turn scripts and reference videos into reusable production assets, local keyframes, and continuity-aware shot plans.",
+    url: "https://www.tessa22.cc",
     siteName: "Tessa AI",
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Tessa AI — AI Film Pre-production Workspace",
+    description: "Turn scripts and reference videos into production-ready visual plans.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -26,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi">
+    <html lang="en">
       <body className="antialiased">{children}</body>
     </html>
   );
